@@ -1,0 +1,71 @@
+:root{
+
+    --background:#f0eded;
+    --dark:#464343;
+    --line-drak:rgba(145, 142, 142, 0.384);
+    --label:#f1ebeb;
+    --white:#fff;
+    --primary:rgb(243, 180, 5);
+    --i:#464343;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background: #000;
+}
+.container header{
+    width: 100%;
+}
+.container header .title{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+.container header .title h1{
+    color: var(--label);
+}
+.container header .title img{
+    width: auto;
+    height: 70px;
+}
+.container main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container main table {
+}
+.container main table thead{
+    background: var(--primary);
+    
+}
+.container main table thead tr th {
+    color: var(--white);
+    padding: 5px;
+}
+.container main table tbody tr td{
+    border-bottom: 1px solid var(--label);
+    padding: 5px;
+    color: var(--label);
+} 
+.btn{
+    padding: 5px 10px;
+    background: rgb(168, 13, 13);
+    color: var(--white);
+    border-radius: 10px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.btn:hover{
+    opacity: 0.8;
+}
+.plus{
+    background: rgb(73, 124, 14);
+    color: var(--white);
+}

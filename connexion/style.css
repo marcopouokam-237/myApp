@@ -1,0 +1,110 @@
+:root{
+    --background:#f0eded;
+    --dark:#464343;
+    --line-drak:rgba(145, 142, 142, 0.384);
+    --label:#777474;
+    --white:#fff;
+    --primary:rgb(243, 180, 5);
+    --i:#464343;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    background-image: url(../images/Logo\ 2.jpg);
+    object-fit: cover;
+}
+.container{
+    background: var(--background);
+    margin: 20px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container form .header{
+    padding: 5px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.container form .header h1{
+    color: var(--dark);
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background: var(--line-drak);
+    margin-bottom: 20px;
+}
+.container form .field{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5px;
+    width: 100%;
+}
+.container form .field .details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container form .field .input-field{
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    flex-direction: column;
+    gap: 5px;
+}
+.container form .field .input-field label{
+    font-size: 14px;
+    color: var(--label);
+    font-weight: bold;
+}
+.container form .field .input-field input{
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+}
+.container form .field .input-field input[type='submit']{
+    width: 100%;
+    font-weight: bold;
+    background: var(--primary);
+    color: var(--white);
+}
+.container form .field .input-field input[type='submit']:hover{
+    opacity: 0.8;
+}
+
+.container form .field .input-field input[type='button']:hover{
+    background: var(--primary);
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+.container form .field .input-field input[type='button']{
+    width: 100%;
+    font-weight: bold;
+    background: var(--white);
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+.container form .field .link i{
+    color: var(--i);
+    text-transform: capitalize;
+}
